@@ -11,7 +11,14 @@ We present a pipeline for training classifiers over a diverse dataset to classif
 - Then run `clean.py` to generate a `clean` directory. These are the processed wavfiles used for classification. Then run `train.py --model-type conv1d` to train a Conv1D net over the `clean` dataset. 
 - Change the value of the model type to `conv2d` and then to `lstm` to store the model parameters into `models` directory.
 - The models are now ready to be used to predict values. To predict values over the trainig data, run `predict.py` with the output logs in `y_pred.npy` file.
-- Some notebooks in `notebooks/` directory contain code snippets used to generate the confusion matrix and ROC characteristics for the models. 
+- Some notebooks in `notebooks/` directory contain code snippets used to generate the confusion matrix and ROC characteristics for the models.
+
+## Plots and Metrics
+We are able to achieve good accuracies over the testing data, containing diverse audio sample .wav files.
+
+![Confusion matrix for the LSTM model](plots/confusion_matrix.png)
+![Train accuracy vs epochs for the LSTM model](plots/plots_accuracy.png)
+![Receiver Operating Characteristics for the LSTM](plots/roc.png)
 
 ## References
 1. Choi, Keunwoo & Joo, Deokjin & Kim, Juho. (2017). Kapre: On-GPU Audio Preprocessing Layers for a Quick Implementation of Deep Neural Network Models with Keras. [link](https://arxiv.org/abs/1706.05781)
