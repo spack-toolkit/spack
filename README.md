@@ -16,9 +16,13 @@ We present a pipeline for training classifiers over a diverse dataset to classif
 ## Plots and Metrics
 We are able to achieve good accuracies over the testing data, containing diverse audio sample .wav files.
 
-![Confusion matrix for the LSTM model](plots/confusion_matrix.png)
+Confusion Matrix for LSTM  |   ROC for LSTM |
+:-------------------------:|:-------------------------:
+![Confusion matrix for the LSTM model](plots/confusion_matrix.png)  |  ![Receiver Operating Characteristics for the LSTM](plots/roc.png)
+
+Train accuracy vs epoch for the LSTM model|
+:------------------------------:
 ![Train accuracy vs epochs for the LSTM model](plots/plots_accuracy.png)
-![Receiver Operating Characteristics for the LSTM](plots/roc.png)
 
 ## References
 1. Choi, Keunwoo & Joo, Deokjin & Kim, Juho. (2017). Kapre: On-GPU Audio Preprocessing Layers for a Quick Implementation of Deep Neural Network Models with Keras. [link](https://arxiv.org/abs/1706.05781)
